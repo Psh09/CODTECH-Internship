@@ -1,5 +1,18 @@
 # Task 1: Automate Web Application Testing using Selenium WebDriver
 
+**COMPANY:** CODTECH IT SOLUTIONS
+
+**NAME:** Prajwal Shivputra Halle 
+
+**INTERN ID:** CT08HLI
+
+**DOMAIN:** Software Testing
+
+**BATCH DURATION:** December 30th, 2024 to January 30th, 2025
+
+**MENTOR NAME:** Neela Santhosh Kumar
+
+
 ## Internship Task Overview
 
 This task involves automating the testing of a sample web application's login and navigation functionality using **Selenium WebDriver**.
@@ -66,6 +79,9 @@ The test execution results will be logged in an **HTML report**. This will conta
 
 1. **Test Automation Script** (`saucedemo_test.py`): A Python script using Selenium WebDriver.
 2. **Test Execution Report**: An HTML file containing the results of the test execution.
+
+## Output
+[OUTPUT](https://github.com/user-attachments/assets/26f99147-fcb5-491b-bfeb-e58711cdce87)
 
 ## Conclusion
 
