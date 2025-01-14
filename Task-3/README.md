@@ -1,4 +1,4 @@
-# Task-4: Load Testing with Gatling
+# Task-3: Security Testing for Web Applications
 
 **COMPANY**: CODTECH IT SOLUTIONS
 
@@ -14,30 +14,27 @@
 
 ---
 ## Overview
-This document provides instructions for performing load testing on a web application using Gatling.
+This document outlines the process for conducting security testing on a sample web application to identify vulnerabilities such as SQL injection and Cross-Site Scripting (XSS).
 
-## Prerequisites
-- Ensure that [Gatling](https://gatling.io/open-source) is installed on your system.
-- Have a running instance of the web application you want to test.
+## Objectives
+- Identify vulnerabilities in the web application.
+- Document findings in a security report.
+- Provide mitigation strategies for identified vulnerabilities.
 
-## Gatling Simulation Script
-The load test script is located at `Task-4/gatling_load_test.scala`. This script defines the load testing parameters and scenarios.
+## Types of Vulnerabilities to Test
+1. **SQL Injection**: Test for vulnerabilities that allow attackers to manipulate SQL queries.
+2. **Cross-Site Scripting (XSS)**: Test for vulnerabilities that allow attackers to inject malicious scripts into web pages.
 
-### Key Components
-- **HTTP Protocol**: Configures the base URL and headers.
-- **Scenario**: Defines the actions to be performed during the test, such as submitting a form.
-- **Load Configuration**: Specifies the number of users and the ramp-up time.
+## Testing Methodology
+1. **Input Validation**: Ensure all user inputs are validated and sanitized.
+2. **Automated Tools**: Use tools like OWASP ZAP or Burp Suite to scan for vulnerabilities.
+3. **Manual Testing**: Conduct manual testing to identify vulnerabilities that automated tools may miss.
 
-## Running the Load Test
-1. Navigate to the Gatling installation directory.
-2. Run the following command to execute the load test:
-   ```bash
-   ./bin/gatling.sh -sf Task-4 -s LoadTestSimulation
-   ```
-3. Monitor the console output for test progress and results.
-
-## Analyzing Results
-After the test completes, Gatling generates a detailed report in the `results` directory. Open the HTML report to analyze performance metrics, including response times and error rates.
+## Deliverables
+- **Security Report**: A detailed report documenting identified vulnerabilities and recommended mitigation strategies.
+  - **Vulnerability Details**: Description of each identified vulnerability.
+  - **Impact Assessment**: Potential impact of each vulnerability on the application.
+  - **Mitigation Strategies**: Recommended actions to remediate each vulnerability.
 
 ## Conclusion
-This README provides a basic guide to load testing with Gatling. For more advanced configurations, refer to the [Gatling documentation](https://gatling.io/docs/current/).
+This README provides a guide for conducting security testing on web applications. Following these instructions will help ensure that the application is secure against common vulnerabilities.
